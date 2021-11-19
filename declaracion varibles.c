@@ -3,9 +3,10 @@
 #include<stdlib.h>
 int main()
 {
+
 	int i,j,k,m,l,cont;
 	int dia,mes,anio,semana,moduloMes,febrero,total_mes; 
-	int seleccion=1;					 
+	int seleccion=1;
 	
 	time_t sisTime; 		
 	struct tm *tiempo;	
@@ -43,6 +44,6 @@ int main()
 			else	
 				printf("%d\t",i);
 		}
-
+   } 
 return 0;
 }
