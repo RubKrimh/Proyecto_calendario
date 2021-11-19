@@ -52,7 +52,7 @@ int main()
 				total_mes=31; 
 				break;
 				}
-	//poner en el calendario mes y año
+
 				switch (mes)
 				{
 				case 0:
