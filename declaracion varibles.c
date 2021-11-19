@@ -31,7 +31,26 @@ int main()
 					else
 					febrero=28;
 					
-					switch{
+					switch(mes)
+					{
+						case 3: 
+						case 5: 
+						case 8: 
+						case 10: 
+						total_mes=30; 
+						break;
+					case 1: 
+					total_mes=febrero;
+					break;
+					case 0: 
+					case 2: 
+					case 4: 
+					case 6: 
+					case 7: 
+					case 9: 
+				case 11: 
+				total_mes=31; 
+				break;
 					}
 	
 	semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
