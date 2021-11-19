@@ -66,6 +66,23 @@ int main()
 			else	
 				printf("%d\t",i);
 		}
+   		while (seleccion<0 || seleccion>1)
+			{
+				printf("ERROR, Ingrese 1/0\n");
+				printf("�Quiere poner otra fecha? \n\t1=SI 0=NO\t>> ");
+				scanf("%d",&seleccion);
+			}
+
+		if (seleccion == 1)
+			{	
+			printf("\nIngrese el mes deseado (mm): ");
+			scanf("%d",&mes);
+ 
+			mes=mes-1; 
+			printf ("Ingrese el A%co deseado (aaaa): ",164);
+			scanf("%d",&anio);
+	printf("\t>>//>>//>>//>>//>>//>>//CALENDARIO\\<<\\<<\\<<\\<<\\<<\\<<n\n");
+			}
    } 
 return 0;
 }
