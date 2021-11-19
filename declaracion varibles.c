@@ -90,7 +90,7 @@ int main()
 				case 11:printf("\t\tDICIEMBRE\t%d",anio);
 				break;
 				}
-		//modulo de mes
+	 
 				
 		semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
 		printf("\nDo\tLu\tMar\tMier\tJue\tVier\tSab\n");				
@@ -119,8 +119,7 @@ int main()
 			{	
 			printf("\nIngrese el mes deseado (mm): ");
 			scanf("%d",&mes);
-//Como nosotros contamos los meses desde 1 al 12 y el programa esta de 0 a 11 
-//por eso se resta mes-1 
+ 
 			mes=mes-1; 
 			printf ("Ingrese el A%co deseado (aaaa): ",164);
 			scanf("%d",&anio);
