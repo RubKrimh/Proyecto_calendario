@@ -52,7 +52,53 @@ int main()
 				total_mes=31; 
 				break;
 					}
-	
+	//poner en el calendario mes y año
+		switch(mes)
+		{
+		}
+		//modulo mes
+				if(fbrero==29)
+				{
+				switch(mes)
+					{
+					case 0:
+					moduloMes=0;
+					break;
+					case 1:
+					moduloMes=3;
+					break;
+					case 2:
+					moduloMes=4;
+					break;
+					case 3:
+					moduloMes=0;
+					break;
+					case 4:
+					moduloMes=2;
+					break;
+					case 5:
+					moduloMes=5;
+					break;
+					case 6:
+					moduloMes=0;
+					break;
+					case 7:
+					moduloMes=3;
+					break;
+					case 8:
+					moduloMes=6;
+					break;
+					case 9:
+					moduloMes=1;
+					break;
+					case 10:
+					moduloMes=4;
+					break;
+					case 11:
+					moduloMes=6;
+					break;
+					}	
+				}
 	semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
 		printf("\nDo\tLu\tMar\tMier\tJue\tVier\tSab\n");				
 		for(m=0;m<semana;m++) 
