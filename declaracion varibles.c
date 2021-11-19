@@ -30,6 +30,9 @@ int main()
 					febrero=29;
 					else
 					febrero=28;
+					
+					switch{
+					}
 	
 	semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
 		printf("\nDo\tLu\tMar\tMier\tJue\tVier\tSab\n");				
