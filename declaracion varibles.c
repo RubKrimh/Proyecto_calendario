@@ -23,6 +23,13 @@ int main()
 	printf("Avil%cs Ram%crez Rub%cn\nFlores Carlos\nMart%cnez S%cnchez Patricia\nS%cnchez Romero Sofia\n\n",130,161,130,161,160,160);
 	printf("\t\t\t\t Hoy es: %d/%d/%d \n\n\n",dia,mes+1,anio);
 	
+		while(seleccion != 0)
+			{          
+					if ((anio%4==0) && (anio%100!=0) || anio%400==0)
+					febrero=29;
+					else
+					febrero=28;
+	
 	semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
 		printf("\nDo\tLu\tMar\tMier\tJue\tVier\tSab\n");				
 		for(m=0;m<semana;m++) 
