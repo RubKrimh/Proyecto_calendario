@@ -69,7 +69,7 @@ int main()
    		while (seleccion<0 || seleccion>1)
 			{
 				printf("ERROR, Ingrese 1/0\n");
-				printf("ï¿½Quiere poner otra fecha? \n\t1=SI 0=NO\t>> ");
+				printf("¿Quiere poner otra fecha? \n\t1=SI 0=NO\t>> ");
 				scanf("%d",&seleccion);
 			}
 
@@ -84,5 +84,6 @@ int main()
 	printf("\t>>//>>//>>//>>//>>//>>//CALENDARIO\\<<\\<<\\<<\\<<\\<<\\<<n\n");
 			}
    } 
+   
 return 0;
 }
