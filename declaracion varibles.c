@@ -53,53 +53,46 @@ int main()
 				break;
 					}
 	//poner en el calendario mes y año
-		switch(mes)
-		{
-		}
-		//modulo mes
-				if(fbrero==29)
+				switch (mes)
 				{
-				switch(mes)
-					{
-					case 0:
-					moduloMes=0;
-					break;
-					case 1:
-					moduloMes=3;
-					break;
-					case 2:
-					moduloMes=4;
-					break;
-					case 3:
-					moduloMes=0;
-					break;
-					case 4:
-					moduloMes=2;
-					break;
-					case 5:
-					moduloMes=5;
-					break;
-					case 6:
-					moduloMes=0;
-					break;
-					case 7:
-					moduloMes=3;
-					break;
-					case 8:
-					moduloMes=6;
-					break;
-					case 9:
-					moduloMes=1;
-					break;
-					case 10:
-					moduloMes=4;
-					break;
-					case 11:
-					moduloMes=6;
-					break;
-					}	
+				case 0:
+				printf("\t\tENERO\t%d",anio);
+				break;
+				case 1:
+				printf("\t\tFEBRERO\t%d",anio);
+				break;
+				case 2:
+				printf("\t\tMARZO\t%d",anio);
+				break;
+				case 3:
+				printf("\t\tABRIL\t%d",anio);
+				break;
+				case 4:
+				printf("\t\tMAYO\t%d",anio);
+				break;
+				case 5:
+				printf("\t\tJUNIO\t%d",anio);
+				break;
+				case 6:
+				printf("\t\tJULIO\t%d",anio);
+				break;
+				case 7:
+				printf("\t\tAGOSTO\t%d",anio);
+				break;
+				case 8:printf("\t\tSEPTIEMBRE\t%d",anio);
+				break;
+				case 9:
+				printf("\t\tOCTUBRE\t%d",anio);
+				break;
+				case 10:
+				printf("\t\tNOVIEMBRE\t%d",anio);
+				break;
+				case 11:printf("\t\tDICIEMBRE\t%d",anio);
+				break;
 				}
-	semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
+		//modulo de mes
+				
+		semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
 		printf("\nDo\tLu\tMar\tMier\tJue\tVier\tSab\n");				
 		for(m=0;m<semana;m++) 
 		printf("\t");
@@ -112,6 +105,7 @@ int main()
 			else	
 				printf("%d\t",i);
 		}
-   } 
+		
+	}
 return 0;
 }
