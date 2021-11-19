@@ -7,13 +7,18 @@ int main()
 	int dia,mes,anio,semana,moduloMes,febrero,total_mes; 
 	int seleccion=1;					 
 	
-	time_t sisTime;
-	struct tm*tiempo;
-
-	time(&sisTime);
-	tiempo=localtime(&sisTime);
-
-printf("\t>>//>>//>>//>>//>>//>>//CALENDARIO\\<<\\<<\\<<\\<<\\<<\\<<n\n");
+	time_t sisTime; 		
+	struct tm *tiempo;	
+	
+	time(&sisTime);		 
+	tiempo=localtime(&sisTime);	
+		
+	dia=tiempo->tm_mday;		 
+	mes=tiempo->tm_mon;	
+	
+	anio=(tiempo->tm_year)+1900;	
+	 
+	printf("\t>>//>>//>>//>>//>>//>>//CALENDARIO\\<<\\<<\\<<\\<<\\<<\\<<n\n");
 	printf("\t--------//--------<<-----Equipo 1----->>--------\\--------\n\n");
 	printf("Avil%cs Ram%crez Rub%cn\nFlores Carlos\nMart%cnez S%cnchez Patricia\nS%cnchez Romero Sofia\n\n",130,161,130,161,160,160);
 	printf("\t\t\t\t Hoy es: %d/%d/%d \n\n\n",dia,mes+1,anio);
