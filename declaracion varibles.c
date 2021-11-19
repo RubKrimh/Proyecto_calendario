@@ -66,6 +66,8 @@ int main()
 			else	
 				printf("%d\t",i);
 		}
+		printf("\n\n\tQuiere poner otra fecha? \n\t1=Si 0=No\t>> ");
+		scanf("%d",&seleccion);
    		while (seleccion<0 || seleccion>1)
 			{
 				printf("ERROR, Ingrese 1/0\n");
