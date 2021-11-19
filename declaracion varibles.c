@@ -52,8 +52,47 @@ int main()
 				total_mes=31; 
 				break;
 					}
-	
-	semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
+	//poner en el calendario mes y año
+				switch (mes)
+				{
+				case 0:
+				printf("\t\tENERO\t%d",anio);
+				break;
+				case 1:
+				printf("\t\tFEBRERO\t%d",anio);
+				break;
+				case 2:
+				printf("\t\tMARZO\t%d",anio);
+				break;
+				case 3:
+				printf("\t\tABRIL\t%d",anio);
+				break;
+				case 4:
+				printf("\t\tMAYO\t%d",anio);
+				break;
+				case 5:
+				printf("\t\tJUNIO\t%d",anio);
+				break;
+				case 6:
+				printf("\t\tJULIO\t%d",anio);
+				break;
+				case 7:
+				printf("\t\tAGOSTO\t%d",anio);
+				break;
+				case 8:printf("\t\tSEPTIEMBRE\t%d",anio);
+				break;
+				case 9:
+				printf("\t\tOCTUBRE\t%d",anio);
+				break;
+				case 10:
+				printf("\t\tNOVIEMBRE\t%d",anio);
+				break;
+				case 11:printf("\t\tDICIEMBRE\t%d",anio);
+				break;
+				}
+		//modulo de mes
+				
+		semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
 		printf("\nDo\tLu\tMar\tMier\tJue\tVier\tSab\n");				
 		for(m=0;m<semana;m++) 
 		printf("\t");
@@ -66,26 +105,7 @@ int main()
 			else	
 				printf("%d\t",i);
 		}
-		printf("\n\n\tQuiere poner otra fecha? \n\t1=Si 0=No\t>> ");
-		scanf("%d",&seleccion);
-   		while (seleccion<0 || seleccion>1)
-			{
-				printf("ERROR, Ingrese 1/0\n");
-				printf("¿Quiere poner otra fecha? \n\t1=SI 0=NO\t>> ");
-				scanf("%d",&seleccion);
-			}
-
-		if (seleccion == 1)
-			{	
-			printf("\nIngrese el mes deseado (mm): ");
-			scanf("%d",&mes);
- 
-			mes=mes-1; 
-			printf ("Ingrese el A%co deseado (aaaa): ",164);
-			scanf("%d",&anio);
-	printf("\t>>//>>//>>//>>//>>//>>//CALENDARIO\\<<\\<<\\<<\\<<\\<<\\<<n\n");
-			}
-   } 
-   
+		
+	}
 return 0;
 }
