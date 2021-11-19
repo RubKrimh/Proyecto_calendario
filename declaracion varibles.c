@@ -51,7 +51,7 @@ int main()
 				case 11: 
 				total_mes=31; 
 				break;
-					}
+				}
 	//poner en el calendario mes y año
 				switch (mes)
 				{
@@ -90,9 +90,9 @@ int main()
 				case 11:printf("\t\tDICIEMBRE\t%d",anio);
 				break;
 				}
-	 if (febrero==29)  
-			{
-			switch (mes)
+	 		if (febrero==29)  
+				{
+				switch (mes)
 				{
 					case 0:
 					moduloMes=0;
@@ -131,15 +131,55 @@ int main()
 					moduloMes=6;
 					break;
 				}
-
+			}
+			else
+			{
+				switch (mes)
+				{
+					case 0:
+					moduloMes=0;
+					break;
+					case 1:
+					moduloMes=3;
+					break;
+					case 2:
+					moduloMes=3;
+					break;
+					case 3:
+					moduloMes=6;
+					break;
+					case 4:
+					moduloMes=1;
+					break;
+					case 5:
+					moduloMes=4;
+					break;
+					case 6:
+					moduloMes=6;
+					break;
+					case 7:
+					moduloMes=2;
+					break;
+					case 8:
+					moduloMes=5;
+					break;
+					case 9:
+					moduloMes=0;
+					break;
+					case 10:
+					moduloMes=3;
+					break;
+					case 11:
+					moduloMes=5;
+					break;
+				}
 			}
 				
 		semana=((anio-1)%7+ ((anio-1)/4 -(3*((anio-1)/100+1)/4))%7+moduloMes+1%7)%7;
 		printf("\nDo\tLu\tMar\tMier\tJue\tVier\tSab\n");				
 		for(m=0;m<semana;m++) 
 		printf("\t");
-		printf("\t");
-		printf("\t");
+
 		for(i=1;i<=total_mes;i++) 
 		{			
 			if(i==8-semana||i==15-semana||i==22-semana||i==29-semana || i== 36-semana)
