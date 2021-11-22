@@ -18,6 +18,10 @@ int main()
 	mes=tiempo->tm_mon;	
 	
 	anio=(tiempo->tm_year)+1900;	
+	
+	hora=tiempo->tm_hour;
+	min=tiempo->tm_min;
+	seg=tiempo->tm_sec;	
 	 
 	printf("\t>>//>>//>>//>>//>>//>>//CALENDARIO\\<<\\<<\\<<\\<<\\<<\\<<n\n");
 	printf("\t--------//--------<<-----Equipo 1----->>--------\\--------\n\n");
