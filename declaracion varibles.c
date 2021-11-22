@@ -26,7 +26,8 @@ int main()
 	printf("\t>>//>>//>>//>>//>>//>>//CALENDARIO\\<<\\<<\\<<\\<<\\<<\\<<n\n");
 	printf("\t--------//--------<<-----Equipo 1----->>--------\\--------\n\n");
 	printf("Avil%cs Ram%crez Rub%cn\nFlores Carlos\nMart%cnez S%cnchez Patricia\nS%cnchez Romero Sofia\n\n",130,161,130,161,160,160);
-	printf("\t\t\t\t Hoy es: %d/%d/%d \n\n\n",dia,mes+1,anio);
+	printf("\t\t\t\t Hoy es: %d/%d/%d\n",dia,mes+1,anio);
+	printf("\t\t\t\t La hora es:%d:%d:%d\n\n\n",hora,min,seg);
 	
 		while(seleccion != 0)
 			{          
